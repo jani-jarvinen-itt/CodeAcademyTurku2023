@@ -2,3 +2,7 @@ DotNet/HelloWorld/bin/
 DotNet/HelloWorld/obj/
 DotNet/HelloWorld/.vscode
 .vscode
+DotNet/UnitTestingDemo/Calculations/bin/
+DotNet/UnitTestingDemo/Calculations/obj/
+DotNet/UnitTestingDemo/Calculations.Tests/bin/
+DotNet/UnitTestingDemo/Calculations.Tests/obj/
