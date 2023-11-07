@@ -11,7 +11,14 @@ public class UserInputReader
                 string input = Console.ReadLine() ?? "0";
                 int guess = int.Parse(input);
 
-                return guess;
+                if ((guess >= 1) && (guess <= 20))
+                {
+                    return guess;
+                }
+                else
+                {
+                    Console.WriteLine("The range for the guess is between 1 and 20.");
+                }
             }
             catch
             {
