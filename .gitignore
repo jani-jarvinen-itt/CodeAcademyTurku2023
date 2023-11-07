@@ -10,3 +10,7 @@ DotNet/WebAppDemo/AspNetMvcDemo/bin/
 DotNet/WebAppDemo/AspNetMvcDemo/obj/
 DotNet/WebAppDemo/AspNetMvcDemo.Tests/bin/
 DotNet/WebAppDemo/AspNetMvcDemo.Tests/obj/
+
+DotNet/NumberGame/bin/
+DotNet/NumberGame/obj/
+DotNet/NumberGame/.vscode/
