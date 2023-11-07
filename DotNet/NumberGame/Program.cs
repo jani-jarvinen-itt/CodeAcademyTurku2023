@@ -1,12 +1,11 @@
 ﻿Console.WriteLine("Welcome to the Number Guessing game.");
 int correct = Random.Shared.Next(1, 21);
 // Console.WriteLine(correct);
+UserInputReader reader = new();
 
 for (int numberOfGuesses = 0; numberOfGuesses < 3; numberOfGuesses++)
 {
-    Console.WriteLine("Please enter your guess between 1 and 20.");
-    string input = Console.ReadLine() ?? "0";
-    int guess = int.Parse(input);
+    int guess = reader.ReadGuess();
 
     if (guess == correct)
     {
