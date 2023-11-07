@@ -14,3 +14,7 @@ DotNet/WebAppDemo/AspNetMvcDemo.Tests/obj/
 DotNet/NumberGame/bin/
 DotNet/NumberGame/obj/
 DotNet/NumberGame/.vscode/
+
+DotNet/LongStringTest/bin/
+DotNet/LongStringTest/obj/
+DotNet/LongStringTest/.vscode/
