@@ -1,0 +1,23 @@
+﻿@model List<PersonModel>
+
+<h1>Persons from the CSV file</h1>
+
+<table class="table table-striped w-50">
+    <thead>
+        <tr>
+            <th>Person</th>
+            <th>Year of birth</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr>
+                <td>@person.PersonName</td>
+                <td>@person.YearOfBirth</td>
+                <td>@person.Country</td>
+            </tr>
+        }
+    </tbody>
+</table>
