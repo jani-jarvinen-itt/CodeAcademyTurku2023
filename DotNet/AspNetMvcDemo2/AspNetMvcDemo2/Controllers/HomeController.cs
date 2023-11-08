@@ -13,6 +13,11 @@ namespace AspNetMvcDemo2.Controllers
             _logger = logger;
         }
 
+        public string SayHello()
+        {
+            return "Hello World!";
+        }
+
         public IActionResult Index()
         {
             return View();
