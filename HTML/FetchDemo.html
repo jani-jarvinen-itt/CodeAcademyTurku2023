@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetch API Demo Page</title>
+    </head>
+    <body>
+        <h1>Fetch API Demo Page</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>User Id</th>
+                    <th>User Name</th>
+                </tr>
+            </thead>
+            <tbody id="table-content">
+
+            </tbody>
+        </table>
+
+        <script>
+            const tbody = document.getElementById("table-content");
+            const row = document.createElement("tr");
+            const col1 = document.createElement("td");
+            const col2 = document.createElement("td");
+
+            col1.textContent = "123";
+            col2.textContent = "John Doe";
+
+            row.appendChild(col1);
+            row.appendChild(col2);
+            tbody.appendChild(row);
+        </script>
+    </body>
+</html>
