@@ -25,3 +25,7 @@ DotNet/LongStringTest/.vscode/
 /DotNet/AspNetMvcDemo2/AspNetMvcDemo2/obj
 /DotNet/AspNetMvcDemo2/AspNetMvcDemo2/AspNetMvcDemo2.csproj.user
 /DotNet/AspNetMvcDemo2/.vs/ProjectEvaluation
+
+DotNet/BlazorAppDemo/.vs/
+DotNet/BlazorAppDemo/BlazorAppDemo/bin/
+DotNet/BlazorAppDemo/BlazorAppDemo/obj/
