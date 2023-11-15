@@ -29,3 +29,8 @@ DotNet/LongStringTest/.vscode/
 DotNet/BlazorAppDemo/.vs/
 DotNet/BlazorAppDemo/BlazorAppDemo/bin/
 DotNet/BlazorAppDemo/BlazorAppDemo/obj/
+
+DotNet/EqualityDemo/.vscode/
+DotNet/EqualityDemo/bin/
+DotNet/EqualityDemo/obj/
+
