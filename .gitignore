@@ -34,3 +34,5 @@ DotNet/EqualityDemo/.vscode/
 DotNet/EqualityDemo/bin/
 DotNet/EqualityDemo/obj/
 
+JavaScript/ExpressJsAPIDemo/node_modules/
+JavaScript/ExpressJsAPIDemo/package-lock.json
