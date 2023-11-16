@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Fetch API Demo Page</title>
-    </head>
-    <body>
-        <h1>Fetch API Demo Page</h1>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>User Id</th>
-                    <th>User Name</th>
-                </tr>
-            </thead>
-            <tbody id="table-content">
+<head>
+    <title>Fetch API Demo Page</title>
+</head>
 
-            </tbody>
-        </table>
+<body>
+    <h1>Fetch API Demo Page</h1>
 
-        <script>
+    <table>
+        <thead>
+            <tr>
+                <th>User Id</th>
+                <th>User Name</th>
+            </tr>
+        </thead>
+        <tbody id="table-content">
+
+        </tbody>
+    </table>
+
+    <script>
+        function addTableRow(userId, userName) {
             const tbody = document.getElementById("table-content");
             const row = document.createElement("tr");
             const col1 = document.createElement("td");
             const col2 = document.createElement("td");
 
-            col1.textContent = "123";
-            col2.textContent = "John Doe";
+            col1.textContent = userId;
+            col2.textContent = userName;
 
             row.appendChild(col1);
             row.appendChild(col2);
             tbody.appendChild(row);
-        </script>
-    </body>
+        }
+
+        // start fetching user data from the backend API
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(userList => {
+                console.log(userList);
+
+                for (let index = 0; index < userList.length; index++) {
+                    const user = userList[index];
+                    addTableRow(user.id, user.name);
+                }
+
+                console.log("All users added to the HTML table.");
+            });
+    </script>
+</body>
+
 </html>
