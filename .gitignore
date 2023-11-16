@@ -36,3 +36,5 @@ DotNet/EqualityDemo/obj/
 
 JavaScript/ExpressJsAPIDemo/node_modules/
 JavaScript/ExpressJsAPIDemo/package-lock.json
+TypeScript/node_modules/
+TypeScript/package-lock.json
