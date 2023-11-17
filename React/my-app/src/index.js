@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloReact from './HelloReact';
 import { HelloReact2 } from './HelloReact2';
+import WarningMessage from './WarningMessage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <App />
     <HelloReact />
     <HelloReact2 />
+    <WarningMessage />
   </React.StrictMode>
 );
 
