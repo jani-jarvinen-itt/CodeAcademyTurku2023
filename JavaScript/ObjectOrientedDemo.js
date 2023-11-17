@@ -1,34 +1,39 @@
 // definition of the class
 class Car {
 
+    // private fields
+    #engineRunning = false;
+    #currentSpeed = 0;
+
     constructor() {
         // initialize properties
         this.make = "";
         this.model = "";
         this.topSpeed = 0;
-
-        this.engineRunning = false;
-        this.currentSpeed = 0;
     }
 
     startEngine() {
-        this.engineRunning = true;
+        this.#engineRunning = true;
     }
 
     stopEngine() {
-        this.engineRunning = false;
+        this.#engineRunning = false;
     }
 
     accelerate() {
-        if (this.engineRunning) {
-            this.currentSpeed += 10;
+        if (this.#engineRunning) {
+            this.#currentSpeed += 10;
+
+            if (this.#currentSpeed > this.topSpeed) {
+                this.#currentSpeed = this.topSpeed;
+            }
         }
     }
 
     decelerate() {
-        this.currentSpeed -= 10;
-        if (this.currentSpeed < 0) {
-            this.currentSpeed = 0;
+        this.#currentSpeed -= 10;
+        if (this.#currentSpeed < 0) {
+            this.#currentSpeed = 0;
         }
     }
 }
@@ -43,9 +48,9 @@ myCar.someProperty = "ABC"; // new property!
 myCar.startEngine();
 myCar.accelerate();
 
-// wrong!
-myCar.currentSpeed = -500;
-myCar.engineRunning = "ABCD";
+// private fields cannot be set from the outside
+// myCar.#currentSpeed = -500;
+// myCar.#engineRunning = "ABCD";
 console.log(myCar);
 
 const friendsCar = new Car();
