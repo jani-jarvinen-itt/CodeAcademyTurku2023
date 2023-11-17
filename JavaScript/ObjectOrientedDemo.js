@@ -18,13 +18,18 @@ class Car {
     stopEngine() {
         this.engineRunning = false;
     }
-    
+
     accelerate() {
-        this.currentSpeed += 10;
+        if (this.engineRunning) {
+            this.currentSpeed += 10;
+        }
     }
-    
+
     decelerate() {
         this.currentSpeed -= 10;
+        if (this.currentSpeed < 0) {
+            this.currentSpeed = 0;
+        }
     }
 }
 
@@ -37,6 +42,10 @@ myCar.topSpeed = 180;
 myCar.someProperty = "ABC"; // new property!
 myCar.startEngine();
 myCar.accelerate();
+
+// wrong!
+myCar.currentSpeed = -500;
+myCar.engineRunning = "ABCD";
 console.log(myCar);
 
 const friendsCar = new Car();
