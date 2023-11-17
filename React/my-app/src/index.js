@@ -13,7 +13,8 @@ root.render(
     <App />
     <HelloReact />
     <HelloReact2 />
-    <WarningMessage />
+    <WarningMessage message={"Hello Props!"} />
+    <WarningMessage message={"Hello again!"} />
   </React.StrictMode>
 );
 
