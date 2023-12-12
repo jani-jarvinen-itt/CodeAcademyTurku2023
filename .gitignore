@@ -38,3 +38,6 @@ JavaScript/ExpressJsAPIDemo/node_modules/
 JavaScript/ExpressJsAPIDemo/package-lock.json
 TypeScript/node_modules/
 TypeScript/package-lock.json
+/DotNet/AzureBlobStorageDemo/.vs/AzureBlobStorageDemo
+/DotNet/AzureBlobStorageDemo/AzureBlobStorageDemo/bin/Debug/net7.0
+/DotNet/AzureBlobStorageDemo/AzureBlobStorageDemo/obj
