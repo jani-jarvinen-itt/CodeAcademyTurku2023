@@ -41,3 +41,7 @@ TypeScript/package-lock.json
 /DotNet/AzureBlobStorageDemo/.vs/AzureBlobStorageDemo
 /DotNet/AzureBlobStorageDemo/AzureBlobStorageDemo/bin/Debug/net7.0
 /DotNet/AzureBlobStorageDemo/AzureBlobStorageDemo/obj
+/DotNet/AzureBlobStorageDemo/.vs/ProjectEvaluation
+/DotNet/AzureCosmosDBDemo/.vs/CosmosGettingStarted
+/DotNet/AzureCosmosDBDemo/CosmosGettingStartedTutorial/bin/Debug/netcoreapp3.1
+/DotNet/AzureCosmosDBDemo/CosmosGettingStartedTutorial/obj
