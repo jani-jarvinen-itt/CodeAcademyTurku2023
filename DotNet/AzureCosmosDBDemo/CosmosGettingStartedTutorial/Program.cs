@@ -25,7 +25,7 @@ namespace CosmosGettingStartedTutorial
         private Container container;
 
         // The name of the database and container we will create
-        private string databaseId = "ToDoList";
+        private string databaseId = "JaniTest2";
         private string containerId = "Items";
 
         // <Main>
@@ -69,8 +69,8 @@ namespace CosmosGettingStartedTutorial
             await this.AddItemsToContainerAsync();
             await this.QueryItemsAsync();
             await this.ReplaceFamilyItemAsync();
-            await this.DeleteFamilyItemAsync();
-            await this.DeleteDatabaseAndCleanupAsync();
+            //await this.DeleteFamilyItemAsync();
+            //await this.DeleteDatabaseAndCleanupAsync();
         }
         // </GetStartedDemoAsync>
 
